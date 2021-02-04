@@ -1317,7 +1317,7 @@ case 'timer':
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`O registro foi bem sucedido com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Pada ${date} ${time}\`\`\`\n\`\`\`[Nama]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure}\`\`\`\n\`\`\`Para usar o bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`O registro foi bem sucedido! \nSN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Data ${date} ${time}\`\`\`\n\`\`\`[Nome*Id*]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Idade]: ${umure} \n\n\nPara usar usar o Bot, basta enviar ${prefix}help\`\`\`\n\`\`\`\n*Total de usuários* ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'bv':
 					if (!isGroup) return reply(mess.only.group)
